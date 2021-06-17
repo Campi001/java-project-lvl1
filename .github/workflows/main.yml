@@ -1,0 +1,12 @@
+name: main CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build with Gradle
+        run: make build
